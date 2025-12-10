@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int n,i;
+    long factorial=1;
+    printf("enter non-negative number:");
+    scanf("%d",&n);
+    if(n<0){
+    printf("invalid input,please enter non-negative number \n");
+    return 1;
+    }
+    if(n==0){
+    printf("factorial of 0 is 1\n");
+    }
+    else {
+        for(i=1;i<=n;i++)
+        factorial*=i;
+    }
+    printf("factorial of %d is %d",n,factorial);
+
+    return 0;
+}
+
+output:
+enter non-negative number:9
+factorial of 9 is 362880
