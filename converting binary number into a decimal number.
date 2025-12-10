@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n=11011,a=1,ans=0;
+    while(n!=0){
+        ans=ans+(n%10)*a;
+        n=n/10;
+        a=a*2;
+    }
+    printf("decimal no:%d",ans);
+    return 0;
+}
+
+output:
+decimal no:27
