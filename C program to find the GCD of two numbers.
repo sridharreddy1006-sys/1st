@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int a, b, temp;
+    printf("Enter two integers: ");
+    if (scanf("%d %d", &a, &b) != 2) {
+        printf("Invalid input.\n");
+        return 1;
+    }
+    while (b != 0) {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    printf("The GCD of %d and %d is: %d\n",a,b, a);
+    return 0;
+}
+
+output:
+Enter two integers: 50
+4
+The GCD of 2 and 0 is: 2
