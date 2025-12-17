@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define PI 3.1415
+int main() {
+    double radius, area;
+    printf("Enter the radius of the circle: ");
+    if (scanf("%lf", &radius) != 1 || radius < 0) {
+        printf("Please enter a valid positive number.\n");
+        return 1;
+    }
+    area = PI * radius * radius;
+    printf("The area of the circle with radius %.2lf is: %.2lf\n", radius, area);
+    return 0;
+}
+
+output:
+Enter the radius of the circle: 24
+The area of the circle with radius 24.00 is: 1809.50
