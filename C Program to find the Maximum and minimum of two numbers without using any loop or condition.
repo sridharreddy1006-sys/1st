@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a,b;
+    printf("enter two numbers:\n");
+    scanf("%d%d",&a,&b);
+    printf("max = %d\n", ((a + b) + abs(a - b)) / 2);
+    printf("min = %d", ((a + b) - abs(a - b)) / 2);
+    return 0;
+}
+
+output:
+enter two numbers:
+67
+95
+max = 95
+min = 67
