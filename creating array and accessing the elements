@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+  int myNumbers[] = {25, 50, 75, 100};
+  printf("first element:%d\n", myNumbers[0]);
+  printf("second element:%d\n", myNumbers[1]);
+  printf("third element:%d\n", myNumbers[2]);
+  printf("fourth element:%d", myNumbers[3]);
+  return 0;
+}
+
+output:
+first no:25
+second no:50
+third no:75
+fourth no:100
