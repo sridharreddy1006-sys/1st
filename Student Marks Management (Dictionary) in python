@@ -1,0 +1,10 @@
+n = int(input("Enter number of students: "))
+marks = {}
+
+for _ in range(n):
+    name = input("Enter name: ")
+    mark = int(input("Enter mark: "))
+    marks[name] = mark
+
+for student, mark in marks.items():
+    print(f"{student}: {mark}")
