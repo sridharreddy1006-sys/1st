@@ -1,0 +1,6 @@
+lst = [1, 2, 3, 4]
+tup = tuple(lst)
+print("Tuple:", tup)
+
+lst2 = list(tup)
+print("List:", lst2)
