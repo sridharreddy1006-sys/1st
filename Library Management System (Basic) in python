@@ -1,0 +1,12 @@
+books = ["Python", "C Programming", "Java"]
+
+print("Available books:", books)
+borrow = input("Enter book to borrow: ")
+
+if borrow in books:
+    books.remove(borrow)
+    print("Book borrowed successfully")
+else:
+    print("Book not available")
+
+print("Remaining books:", books)
